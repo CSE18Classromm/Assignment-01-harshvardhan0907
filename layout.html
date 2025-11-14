@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semantic Layout</title>
+    <style>
+        body{
+          width: 500px;
+            margin: 1;
+            font-family: Arial;
+        }
+
+        header, nav, section, article, aside, footer{
+            border: 2px solid #999;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        nav{
+            margin-top: 5px;
+        }
+
+        .main{
+            display: flex;
+            margin-top: 5px;
+        }
+
+        section{
+            flex: 2;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        aside{
+            margin-bottom: 1px;
+            flex: 1;
+        }
+
+        article{
+            flex: 2;
+            margin-right: 5px;
+        }
+
+        footer{
+            margin-top: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>hello ABES</h1>
+
+    <header>header</header>
+
+    <nav>nav</nav>
+
+    <div class="main">
+        <div style="flex:2;">
+            <section>section</section>
+            <article>article</article>
+        </div>
+        <aside><br>aside</aside>
+    </div>
+
+    <footer>footer</footer>
+    
+
 </body>
 </html>
