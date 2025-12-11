@@ -13,7 +13,7 @@
     body{
       background: #fff;
       color: #222;
-      display:grid;
+      display:flex;
       align-items:flex-start;
       justify-content:center;
       padding:28px 12px;
@@ -57,7 +57,7 @@
       background-color: rgb(5, 92, 133);
     }
     .boxes{
-      display:flex;
+      display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:var(--gap);
       margin-bottom:var(--gap);
@@ -83,7 +83,7 @@
       border-radius:4px;
       font-size:0.95rem;
       color:var(--muted);
-      background-color: rgb(17, 73, 136);
+      background-color: rgb(15, 156, 156);
     }
     .panel + .panel { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3); }
     @media (max-width:720px){
