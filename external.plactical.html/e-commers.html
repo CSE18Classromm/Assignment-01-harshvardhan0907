@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple E-Commerce Cart</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header{
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            padding: 20px;
+        }
+        .products{
+            width: 70%;
+        }
+        .product{
+            background: yellow;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 28%;
+            text-align: center;
+        }
+        .cart{
+            width: 30%;
+            background: white;
+            padding: 15px;
+            margin-left: 10px;
+            border-radius: 8px;
+        }
+        .cart ul{
+            list-style: none;
+            padding: 0;
+        }
+        .cart li{
+            padding: 5px 0;
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>My E-Commerce Store</h2>
+</header>
+
+<div class="container">
+
+    <!-- Product Section -->
+    <div class="products">
+
+        <div class="product">
+            <h3>Laptop</h3>
+            <p>Price:50000rs</p>
+        </div>
+
+        <div class="product">
+            <h3>Smartphone</h3>
+            <p>Price:20000rs</p>
+        </div>
+
+        <div class="product">
+            <h3>Headphones</h3>
+            <p>Price:3000rs</p>
+        </div>
+
+        <div class="product">
+            <h3>Smart Watch</h3>
+            <p>Price:7000rs</p>
+        </div>
+
+        <div class="product">
+            <h3>Keyboard</h3>
+            <p>Price:1500rs</p>
+        </div>
+
+        
+
+    <!-- Cart Section -->
+    <div class="cart">
+        <h3>Shopping Cart</h3>
+        <div class="total">
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
